@@ -1,19 +1,24 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './components/Home'
+import Profile from './components/Home';
 import ProjectCards from './components/Projects';
 import Contact from './components/Contact';
+import SharedLayout from './components/sharedlayout';
 import './App.css';
 
 function App() {
   return (
-     <BrowserRouter>
-     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/Project" element={<ProjectCards />} />
-      <Route path="/Contact" element={<Contact />} />
-     </Routes>
-     </BrowserRouter>
-     
+    <BrowserRouter>
+      <Routes>
+
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<Profile />} />
+          <Route path="Project" element={<ProjectCards />} />
+          <Route path="Contact" element={<Contact />} />
+
+        </Route>
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 
