@@ -45,7 +45,7 @@ const Profile = () => (
           {' '}
           <span className="mentoring bold">
             {' '}
-            React, Redux, JavaScript, Ruby on Rails, C++, Java, leadership, Interpersonnal skills,
+            React, Redux, JavaScript, Ruby on Rails, C++, Java, Leadership, Interpersonnal skills,
             Remote pair-programming.
           </span>
           {' '}

@@ -8,12 +8,12 @@
   background-repeat: no-repeat;
   height: auto;
   display: flex;
-  background-position: 80% 10%;
+  background-position: 80% -5%;
   background-size: 30% auto;
   text-align: center;
   font-family: "Inter", sans-serif;
   line-height: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
 }
 
 .bold {
@@ -21,7 +21,7 @@
 }
 
 .intro {
-  margin-top: 250px;
+  margin-top: 200px;
   margin-left: 80px;
   border-radius: 20%;
   width: 50%;
@@ -40,7 +40,7 @@
 }
 
 .profiles {
-    margin-top: 270px;
+    margin-top: 220px;
     margin-left: 50px;
     display: flex;
     flex-direction: column;
