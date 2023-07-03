@@ -1,6 +1,6 @@
 const Profile = () => (
 
-  <div>
+  <div className="home">
     <h1>welcome to Home page</h1>
   </div>
 );
