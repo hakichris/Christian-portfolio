@@ -2,6 +2,7 @@ import '../home-style/mainpage.css';
 import ProjectCards from './Projects';
 import Contact from './Contact';
 import profilepicture from '../images/profilepicture.jpeg';
+import About from './About'
 
 const Profile = () => (
   <div className="body">
@@ -52,6 +53,10 @@ const Profile = () => (
         </p>
       </div>
     </div>
+    <div>
+    <About />
+    </div>
+    {' '}
     <div>
       <ProjectCards />
     </div>
