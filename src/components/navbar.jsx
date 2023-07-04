@@ -28,6 +28,17 @@ const Navbar = () => (
           style={({ isActive }) => (isActive
             ? { textDecoration: 'underline' }
             : { textDecoration: 'none' })}
+          to="/About"
+        >
+          About
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          className="navlink"
+          style={({ isActive }) => (isActive
+            ? { textDecoration: 'underline' }
+            : { textDecoration: 'none' })}
           to="/Project"
         >
           Projects
