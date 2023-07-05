@@ -3,6 +3,11 @@
   flex-direction: column;
 }
 
+* {
+  box-sizing: border-box;
+  font-family: "Jost", Sans-serif;
+}
+
 .home {
   background-image: url('../images/pngegg.png');
   background-repeat: no-repeat;
@@ -11,7 +16,6 @@
   background-position: 80% -5%;
   background-size: 30% auto;
   text-align: center;
-  font-family: "Inter", sans-serif;
   line-height: 32px;
   margin-bottom: 100px;
 }
@@ -40,7 +44,7 @@
 }
 
 .profiles {
-  margin-top: 220px;
+  margin-top: 240px;
   margin-left: 50px;
   display: flex;
   flex-direction: column;
