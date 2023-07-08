@@ -15,13 +15,16 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 70px;
+  text-align: center;
 }
 
-h1 {
+.title {
   font-size: 50px;
   line-height: 60px;
   text-align: center;
-  margin-bottom: 40px;
+  margin: 0;
+  color: green;
 }
 
 .cards {
@@ -30,10 +33,25 @@ h1 {
   justify-content: space-between;
 }
 
+.stack {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.stack li {
+  font-size: 15px;
+  padding: 5px 10px;
+  color: #3a4a42;
+  background-color: #ebf0ee;
+  border-radius: 5px;
+}
+
 .card {
   flex: 0 0 calc(45%);
   width: 100%;
-  height: 70vh;
+  height: 75vh;
   background: #fff;
   border-radius: 20px;
   margin-bottom: 100px;
@@ -47,6 +65,11 @@ h1 {
   border-color: #1d39c4;
 }
 
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
 button {
   text-decoration: none;
   color: #000;
@@ -56,19 +79,25 @@ button {
   margin-right: 10px;
 }
 
-ul {
-  display: flex;
-  justify-content: center;
+button a {
+  text-decoration: none;
+  color: #000;
 }
 
-.btn {
-  display: flex;
-justify-content: center;
+button a:hover {
+  background-color: green;
+  color: #fff;
 }
 
 button:hover {
   background-color: green;
   color: #fff;
+}
+
+.cardimage {
+  width: 45vw;
+  height: auto;
+  border-radius: 20px;
 }
 
 
@@ -89,12 +118,22 @@ button:hover {
 }
 
 .popup-content {
-  flex: 0 0 calc(70%);
+  flex: 0 0 calc(55%);
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   background: #fff;
   border-radius: 20px;
   margin-bottom: 20px;
   transition: 0.3s;
   border: 2px solid transparent;
+}
+
+.popupimage {
+  width: 55vw;
+  height: auto;
+  border-radius: 20px;
+}
+
+p {
+  margin: 0;
 }
