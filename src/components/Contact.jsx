@@ -1,6 +1,8 @@
+import '../contact-style/contact.css';
+
 const Contact = () => (
 
-  <div>
+  <div className="contact-container">
     <h1>Christian Hakizimana contact</h1>
   </div>
 );
