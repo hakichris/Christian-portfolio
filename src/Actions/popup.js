@@ -1,5 +1,5 @@
 import { PropTypes } from 'prop-types';
-import '../projectcard-style/card.css';
+import '../CSS/card.css';
 
 const Popup = ({ card }) => (
   <div className="popup-container">

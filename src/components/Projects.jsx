@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import Popup from '../Actions/popup';
-import '../projectcard-style/card.css';
+import '../CSS/card.css';
 import mentorimage from '../images/ProjectCardImages/mentorimage.png';
-import budgetimage from '../images/ProjectCardImages/Budget app.png';
+import budgetimage from '../images/ProjectCardImages/budget.png';
 import recipe from '../images/ProjectCardImages/Recipe.png';
+import todolist from '../images/ProjectCardImages/todolist.png';
+import conference from '../images/ProjectCardImages/conference.png';
+import catalog from '../images/ProjectCardImages/catalog.png';
 
 const ProjectCards = () => {
   const [isOpen, setIsOpen] = useState(null);
@@ -12,7 +15,7 @@ const ProjectCards = () => {
       id: '1',
       image: mentorimage,
       title: 'Mentor booking',
-      stacks: ['Ruby', 'Rails', 'React', 'Redux', 'HTML5', 'Unit testing'],
+      stacks: ['Ruby', 'Rails', 'React', 'Redux', 'Back-end API', 'Unit testing'],
       explanation: 'Mentor-booking app helps juniors to book meetings and connect with seniors mentors in a specific stack. I designed the back-end API using ruby and also works on reservation for users.',
       link: ['https://github.com/hienphan0111/Mentor-front-end-app', 'https://mentor-app-qxn4.onrender.com/'],
 
@@ -38,29 +41,29 @@ const ProjectCards = () => {
 
     {
       id: '4',
-      image: '../images/pngwing.com (2).png',
-      title: 'my project 4',
-      stacks: ['stack1', 'stack2', 'stack3'],
-      explanation: 'Hello chris you are going to build your projects card',
-      link: ['github link', 'live links'],
+      image: todolist,
+      title: 'Personal to do list',
+      stacks: ['Javascript', 'HTML5', 'CSS3', 'remote pair-programming', 'Dom manipulation', 'Webpack'],
+      explanation: 'A To-Do List app assists users in managing their planned tasks by allowing them to add and remove activities as needed.',
+      link: ['https://github.com/hakichris/TO-DO-LIST.github.io', 'https://hakichris.github.io/TO-DO-LIST.github.io/'],
     },
 
     {
       id: '5',
-      image: '../images/pngwing.com (2).png',
-      title: 'my project 5',
-      stacks: ['stack1', 'stack2', 'stack3'],
-      explanation: 'Hello chris you are going to build your projects card',
-      link: ['github link', 'live links'],
+      image: conference,
+      title: 'Real Estate Conference',
+      stacks: ['Agile', 'Node.js', 'DOM manupulation', 'Slack', 'GitHub', 'Git'],
+      explanation: 'The real estate conference website enables users to access program details, make room reservations, and participate in the conference virtually.',
+      link: ['https://github.com/hakichris/RealEstateConferenceRoom', 'https://hakichris.github.io/RealEstateConferenceRoom/'],
     },
 
     {
       id: '6',
-      image: '../images/pngwing.com (2).png',
-      title: 'my project 6',
-      stacks: ['stack1', 'stack2', 'stack3'],
-      explanation: 'Hello chris you are going to build your projects card',
-      link: ['github link', 'live links'],
+      image: catalog,
+      title: 'My catalog',
+      stacks: ['Object Oriented programming', 'Ruby', 'Database management', 'Rspec Unit testing', 'MySQL', 'PostgreSQL'],
+      explanation: 'The catalog app allows users to record, categorize and organize various items such as music, books, and movies.',
+      link: ['https://github.com/hakichris/Catalog-of-my-things', 'https://drive.google.com/drive/search?q=video'],
     },
 
   ]);
