@@ -81,16 +81,14 @@ const ProjectCards = () => {
             <div key={card.id} id={card.id} className="card">
               <img src={card.image} alt="cardimage" className="cardimage" />
               <h1 className="title">{card.title}</h1>
-              <div className="stacks">
-                <ul className="stack">
-                  <li>{card.stacks[0]}</li>
-                  <li>{card.stacks[1]}</li>
-                  <li>{card.stacks[2]}</li>
-                  <li>{card.stacks[3]}</li>
-                  <li>{card.stacks[4]}</li>
-                  <li>{card.stacks[5]}</li>
-                </ul>
-              </div>
+              <ul className="stack">
+                <li>{card.stacks[0]}</li>
+                <li>{card.stacks[1]}</li>
+                <li>{card.stacks[2]}</li>
+                <li>{card.stacks[3]}</li>
+                <li>{card.stacks[4]}</li>
+                <li>{card.stacks[5]}</li>
+              </ul>
               <div className="btn">
                 <button type="submit"><a href={card.link[0]}>Check source</a></button>
                 <button type="submit"><a href={card.link[1]}>Live demo</a></button>
