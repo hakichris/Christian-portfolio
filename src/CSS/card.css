@@ -32,20 +32,33 @@ section {
   justify-content: space-between;
 }
 
-.stack {
+ .stack {
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 5px;
+  width: 100%;
   padding: 0;
 }
 
 .stack li {
   font-size: 15px;
   padding: 5px 10px;
+  text-align: center;
   height: fit-content;
   color: #3a4a42;
   background-color: #ebf0ee;
   border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .card {
@@ -119,8 +132,7 @@ button:hover {
 }
 
 .popup-content {
-  flex: 0 0 calc(55%);
-  width: 100%;
+  width: 60vw;
   height: fit-content;
   background: #fff;
   border-radius: 20px;
@@ -130,11 +142,24 @@ button:hover {
 }
 
 .popupimage {
-  width: 55vw;
+  width: 100%;
   height: auto;
   border-radius: 20px;
 }
 
+.popupbtn {
+  flex: 0 0 calc(55%);
+  position: absolute;
+}
+
 p {
   margin: 0;
+}
+
+.closebtn {
+  position: relative;
+  color: rgb(45, 53, 45);
+  cursor: pointer;
+  top:20px;
+  left: 30vw;
 }
