@@ -20,6 +20,8 @@ const Profile = () => (
             <a href="https://www.facebook.com/christian.hakizimana.1">Facebook</a>
           </li>
         </ul>
+        <span>Email: Hakizachrist1@outlook.com</span>
+        <span>Tel: +257 62 876959</span>
       </div>
       <div className="intro">
         <h1 className="head1">
