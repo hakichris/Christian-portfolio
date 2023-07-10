@@ -8,8 +8,6 @@ const About = () => (
         className="youtubevideo"
         src="https://www.youtube.com/embed/7WU__JQuB8g"
         title="YouTube video player"
-        frameBorder="0"
-        frameBorder-radius="border-radius: 10px"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       />
