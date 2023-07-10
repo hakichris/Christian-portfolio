@@ -19,10 +19,10 @@ section {
 }
 
 .title {
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 250%;
+  line-height: 100%;
   text-align: center;
-  margin: 0;
+  margin-bottom: 1%;
   color: green;
 }
 
@@ -32,12 +32,11 @@ section {
   justify-content: space-between;
 }
 
-.stack {
+.stacks {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  width: 100%;
   padding: 0;
 }
 
@@ -46,8 +45,8 @@ section {
   padding: 5px 10px;
   text-align: center;
   height: fit-content;
-  color: #3a4a42;
-  background-color: #fff;
+  color: white;
+  background-color:  #446649;
   border-radius: 5px;
 }
 
@@ -64,7 +63,7 @@ section {
 .card {
   flex: 0 0 calc(45%);
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   background: #fff;
   border-radius: 20px;
   margin-bottom: 100px;
