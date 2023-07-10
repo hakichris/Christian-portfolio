@@ -30,34 +30,36 @@ const ContactForm = () => {
 
   return (
     <div className="contact-container">
-      <h1>Reach out</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          id="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Name"
-          required
-        />
-        <input
-          type="email"
-          id="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email"
-          required
-        />
-        {emailError && <p style={{ color: 'red', marginBottom: '20px' }}>{emailError}</p>}
-        <textarea
-          id="message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          placeholder="Message"
-          required
-        />
-        <button type="submit">Submit</button>
-      </form>
+      <div className="contact-content">
+        <h1>Reach out</h1>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email"
+            required
+          />
+          {emailError && <p style={{ color: 'red', marginBottom: '20px' }}>{emailError}</p>}
+          <textarea
+            id="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            placeholder="Message"
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </div>
   );
 };
