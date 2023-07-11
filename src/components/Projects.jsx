@@ -43,7 +43,7 @@ const ProjectCards = () => {
       id: '4',
       image: todolist,
       title: 'Personal to do list',
-      stacks: ['Javascript', 'HTML5', 'CSS3', 'remote pair-programming', 'Dom manipulation', 'Webpack'],
+      stacks: ['Javascript', 'HTML5', 'CSS3', 'Remote pair-programming', 'Dom manipulation', 'Webpack'],
       explanation: 'A To-Do List app assists users in managing their planned tasks by allowing them to add and remove activities as needed.',
       link: ['https://github.com/hakichris/TO-DO-LIST.github.io', 'https://hakichris.github.io/TO-DO-LIST.github.io/'],
     },
