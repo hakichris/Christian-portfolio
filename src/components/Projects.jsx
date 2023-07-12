@@ -63,7 +63,7 @@ const ProjectCards = () => {
       title: 'My catalog',
       stacks: ['Object Oriented programming', 'Ruby', 'Database management', 'Rspec Unit testing', 'MySQL', 'PostgreSQL'],
       explanation: 'The catalog app allows users to record, categorize and organize various items such as music, books, and movies.',
-      link: ['https://github.com/hakichris/Catalog-of-my-things', 'https://drive.google.com/drive/search?q=video'],
+      link: ['https://github.com/hakichris/Catalog-of-my-things', 'https://drive.google.com/file/d/1dGZ8XjP7qJ_J2JurZg3jBi_AEB2kRVEU/view?usp=drive_link'],
     },
 
   ]);
