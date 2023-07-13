@@ -21,7 +21,6 @@ const ContactForm = () => {
     setEmailError(''); // Clear the email error if email is valid
 
     // Handle form submission logic here
-
     // Clear form fields if submission is successful
     setEmail('');
     setName('');
