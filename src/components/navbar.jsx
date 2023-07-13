@@ -52,7 +52,7 @@ const Navbar = () => (
             : { textDecoration: 'none' })}
           to="/Contact"
         >
-          Contacts
+          Contact me
         </NavLink>
       </li>
     </ul>
