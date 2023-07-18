@@ -1,5 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import AOS from 'aos';
 import Popup from '../Actions/popup';
+import 'aos/dist/aos.css';
 import '../CSS/card.css';
 import mentorimage from '../images/ProjectCardImages/mentorimage.png';
 import budgetimage from '../images/ProjectCardImages/budget.png';
@@ -15,7 +17,7 @@ const ProjectCards = () => {
       id: '1',
       image: mentorimage,
       title: 'Mentor booking',
-      stacks: ['Ruby', 'Rails', 'React', 'Redux', 'Back-end API', 'Unit testing'],
+      stacks: ['Ruby on Rails', 'TailwindCSS', 'React', 'Redux', 'Back-end API', 'Unit testing'],
       explanation: 'Mentor-booking app helps juniors to book meetings and connect with seniors mentors in a specific stack. I designed the back-end API using ruby and also works on reservation for users.',
       link: ['https://github.com/hienphan0111/Mentor-front-end-app', 'https://mentor-app-qxn4.onrender.com/'],
 
@@ -61,7 +63,7 @@ const ProjectCards = () => {
       id: '6',
       image: catalog,
       title: 'My catalog',
-      stacks: ['Object Oriented programming', 'Ruby', 'Database management', 'Rspec Unit testing', 'MySQL', 'PostgreSQL'],
+      stacks: ['Object-oriented programming', 'Ruby', 'Database management', 'Rspec Unit testing', 'MySQL', 'PostgreSQL'],
       explanation: 'The catalog app allows users to record, categorize and organize various items such as music, books, and movies.',
       link: ['https://github.com/hakichris/Catalog-of-my-things', 'https://drive.google.com/file/d/1dGZ8XjP7qJ_J2JurZg3jBi_AEB2kRVEU/view?usp=drive_link'],
     },
@@ -72,6 +74,10 @@ const ProjectCards = () => {
     setIsOpen(id);
   };
 
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <section>
       <div className="card-container">
@@ -79,28 +85,33 @@ const ProjectCards = () => {
         <div className="cards">
           {cards.map((card) => (
             <div key={card.id} id={card.id} className="card">
-              <img src={card.image} alt="cardimage" className="cardimage" />
-              <h1 className="title">{card.title}</h1>
-              <div className="stacks">
-                <ul className="stack">
-                  <li>{card.stacks[0]}</li>
-                  <li>{card.stacks[1]}</li>
-                  <li>{card.stacks[2]}</li>
-                  <li>{card.stacks[3]}</li>
-                  <li>{card.stacks[4]}</li>
-                  <li>{card.stacks[5]}</li>
-                </ul>
+              <div className="imgbox" data-aos="fade-right">
+                <img src={card.image} alt="cardimage" className="cardimage" />
               </div>
-              <div className="btn">
-                <button type="submit"><a href={card.link[0]}>Check source</a></button>
-                <button type="submit"><a href={card.link[1]}>Live demo</a></button>
-                <button type="submit" onClick={() => togglePopup(card.id)}>
-                  View more details
-                </button>
+              <div className="card-content" data-aos="fade-left">
+                <h1 className="title">{card.title}</h1>
+                <div className="stacks">
+                  <ul className="stack">
+                    <li>{card.stacks[0]}</li>
+                    <li>{card.stacks[1]}</li>
+                    <li>{card.stacks[2]}</li>
+                    <li>{card.stacks[3]}</li>
+                    <li>{card.stacks[4]}</li>
+                    <li>{card.stacks[5]}</li>
+                  </ul>
+                </div>
+
+                <div className="btn">
+                  <button type="submit"><a href={card.link[0]} target="_blank" rel="noreferrer">Check source</a></button>
+                  <button type="submit"><a href={card.link[1]} target="_blank" rel="noreferrer">Live demo</a></button>
+                  <button type="submit" onClick={() => togglePopup(card.id)}>
+                    View more details
+                  </button>
+                </div>
+                {isOpen === card.id && (
+                  <Popup isOpen={isOpen === card.id} togglePopup={togglePopup} card={card} />
+                )}
               </div>
-              {isOpen === card.id && (
-                <Popup isOpen={isOpen === card.id} togglePopup={togglePopup} card={card} />
-              )}
             </div>
           ))}
         </div>
