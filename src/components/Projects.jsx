@@ -85,10 +85,10 @@ const ProjectCards = () => {
         <div className="cards">
           {cards.map((card) => (
             <div key={card.id} id={card.id} className="card">
-              <div className="imgbox" data-aos="fade-right">
+              <div className="imgbox" data-aos="fade-down-left">
                 <img src={card.image} alt="cardimage" className="cardimage" />
               </div>
-              <div className="card-content" data-aos="fade-left">
+              <div className="card-content">
                 <h1 className="title">{card.title}</h1>
                 <div className="stacks">
                   <ul className="stack">
