@@ -33,8 +33,8 @@ const Popup = ({ card }) => {
                 </ul>
               </div>
               <div className="btn">
-                <button type="submit"><a href={card.link[0]}>Check source</a></button>
-                <button type="submit"><a href={card.link[1]}>Live demo</a></button>
+                <button type="submit"><a href={card.link[0]} target="_blank" rel="noreferrer">Check source</a></button>
+                <button type="submit"><a href={card.link[1]} target="_blank" rel="noreferrer">Live demo</a></button>
               </div>
             </div>
           </div>
