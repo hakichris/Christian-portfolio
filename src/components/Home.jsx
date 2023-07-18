@@ -8,16 +8,16 @@ const Profile = () => (
         <img src={profilepicture} className="profilepicture" alt="myprofile" />
         <ul className="profile-links">
           <li>
-            <a href="https://www.linkedin.com/in/hakichris/">Linkedin</a>
+            <a href="https://www.linkedin.com/in/hakichris/" rel="noreferrer" target="_blank">Linkedin</a>
           </li>
           <li>
-            <a href="https://github.com/hakichris">Github</a>
+            <a href="https://github.com/hakichris" rel="noreferrer" target="_blank">Github</a>
           </li>
           <li>
-            <a href="https://twitter.com/hakichris2">Twitter</a>
+            <a href="https://twitter.com/hakichris2" rel="noreferrer" target="_blank">Twitter</a>
           </li>
           <li>
-            <a href="https://www.facebook.com/christian.hakizimana.1">Facebook</a>
+            <a href="https://www.facebook.com/christian.hakizimana.1" rel="noreferrer" target="_blank">Facebook</a>
           </li>
         </ul>
         <span>Email: Hakizachrist1@outlook.com</span>
