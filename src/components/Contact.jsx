@@ -1,6 +1,6 @@
 import '../CSS/contact.css';
 import React, { useState } from 'react';
-import { useForm } from '@formspree/react';
+// import { useForm } from '@formspree/react';
 
 const ContactForm = () => {
   const [name, setName] = useState('');
@@ -22,7 +22,7 @@ const ContactForm = () => {
     setEmailError(''); // Clear the email error if email is valid
 
     // Handle form submission logic here
-    useForm('xnqyaqak');
+    // useForm('xnqyaqak');
     // Clear form fields if submission is successful
     setEmail('');
     setName('');
