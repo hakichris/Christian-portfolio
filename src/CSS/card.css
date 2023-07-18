@@ -27,6 +27,14 @@ section {
   color: green;
 }
 
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
 .card {
   flex: 0 0 calc(45%);
   position: relative;
@@ -37,12 +45,6 @@ section {
   margin-right: 0;
   transition: 0.3s;
 
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .stack {
@@ -74,7 +76,7 @@ section {
   align-items: center;
   margin-top: 120px;
   background: #a29d9d;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 50px 50px;
 
 }
 

@@ -13,7 +13,7 @@ const Navbar = () => (
     <ul className="navlink">
       <li>
         <NavLink
-          className="navlink"
+          className="navlink hvr-underline-from-right"
           style={({ isActive }) => (isActive
             ? { textDecoration: 'underline' }
             : { textDecoration: 'none' })}
@@ -24,7 +24,7 @@ const Navbar = () => (
       </li>
       <li>
         <NavLink
-          className="navlink"
+          className="navlink hvr-underline-from-right"
           style={({ isActive }) => (isActive
             ? { textDecoration: 'underline' }
             : { textDecoration: 'none' })}
@@ -35,7 +35,7 @@ const Navbar = () => (
       </li>
       <li>
         <NavLink
-          className="navlink"
+          className="navlink hvr-underline-from-right"
           style={({ isActive }) => (isActive
             ? { textDecoration: 'underline' }
             : { textDecoration: 'none' })}
@@ -46,7 +46,7 @@ const Navbar = () => (
       </li>
       <li>
         <NavLink
-          className="navlink"
+          className="navlink hvr-underline-from-right"
           style={({ isActive }) => (isActive
             ? { textDecoration: 'underline' }
             : { textDecoration: 'none' })}
