@@ -3,7 +3,7 @@
   position: sticky;
   justify-content: center;
   align-items: center;
-  width: 73vh;
+  width: 75vh;
   top: 0%;
   left: 50%;
   transform: translate(-50%, 20%);
@@ -45,6 +45,7 @@ li {
   text-decoration: none;
   font-weight: 700;
   color: #2c5933;
+  padding: 0;
 }
 
 @media (max-width: 768px) {
@@ -53,7 +54,7 @@ li {
     position: fixed;
     justify-content: center;
     align-items: center;
-    width: 73vh;
+    width: 75vh;
     top: 0;
     transform: translate(-50%, 20%);
     font-family: "Inter", sans-serif;
