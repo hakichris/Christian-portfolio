@@ -1,6 +1,5 @@
 import '../CSS/contact.css';
 import React, { useState } from 'react';
-// import { useForm } from '@formspree/react';
 
 const ContactForm = () => {
   const [name, setName] = useState('');
@@ -13,7 +12,7 @@ const ContactForm = () => {
     return regex.test(email);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validateEmail(email)) {
       setEmailError('Please enter a valid email address');
@@ -22,11 +21,23 @@ const ContactForm = () => {
     setEmailError(''); // Clear the email error if email is valid
 
     // Handle form submission logic here
-    // useForm('xnqyaqak');
-    // Clear form fields if submission is successful
-    setEmail('');
-    setName('');
-    setMessage('');
+    const formData = new FormData();
+    formData.append('name', name);
+    formData.append('email', email);
+    formData.append('message', message);
+
+    const response = await fetch('https://formspree.io/f/xnqyaqak', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        Accept: 'application/json',
+      },
+    });
+    if (response.status === 200) {
+      setEmail('');
+      setName('');
+      setMessage('');
+    }
   };
 
   return (
