@@ -219,7 +219,6 @@ p {
     height: 40vh;
     transform: translateX(-25%);
     border-radius: 20px;
-    left: 27%;
     overflow: hidden;
     z-index: 99;
   }
