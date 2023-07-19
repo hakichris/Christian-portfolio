@@ -171,6 +171,7 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
+
 .popupimage {
   width: 100%;
   height: auto;
@@ -203,6 +204,7 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   
   .card {
     flex-basis: calc(100% - 50px);

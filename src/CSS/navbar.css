@@ -73,6 +73,7 @@ li {
   position: relative;
   overflow: hidden;
 }
+
 .hvr-underline-from-right:before {
   content: "";
   position: absolute;
@@ -89,6 +90,7 @@ li {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .hvr-underline-from-right:hover:before, .hvr-underline-from-right:focus:before, .hvr-underline-from-right:active:before {
   left: 0;
 }
