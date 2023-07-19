@@ -1,4 +1,5 @@
 import '../CSS/aboutme.css';
+import Typewriter from 'typewriter-effect';
 
 const About = () => {
   const handleDownload = () => {
@@ -10,17 +11,32 @@ const About = () => {
   };
 
   return (
-
     <div className="about">
       <div className="aboutmevideo">
         <h1>About me</h1>
+        <div>
+          <p>
+            {' '}
+            <Typewriter
+              options={{
+                strings: ['I code simple, innovative solutions for complex problems',
+                  'I love working in teams of diversified people from bottom to top level',
+                  'I stand for diversity and inclusion'],
+                autoStart: true,
+                loop: false,
+                deleteSpeed: 10,
+              }}
+            />
+          </p>
+        </div>
         <iframe
           className="youtubevideo"
-          src="https://www.youtube.com/embed/7WU__JQuB8g"
+          src="https://www.youtube.com/embed/7WU__JQuB8g/controls=1"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         />
+
       </div>
       <div className="download-resume">
         <button type="submit" onClick={handleDownload}>

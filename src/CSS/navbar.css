@@ -3,7 +3,7 @@
   position: sticky;
   justify-content: center;
   align-items: center;
-  width: 70vh;
+  width: 73vh;
   top: 0%;
   left: 50%;
   transform: translate(-50%, 20%);
@@ -53,8 +53,8 @@ li {
     position: fixed;
     justify-content: center;
     align-items: center;
-    width: 70vh;
-    top: 0%;
+    width: 73vh;
+    top: 0;
     transform: translate(-50%, 20%);
     font-family: "Inter", sans-serif;
     background-color: whitesmoke;
