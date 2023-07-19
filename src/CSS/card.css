@@ -14,7 +14,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -33,6 +33,11 @@ section {
   align-items: center;
   flex-wrap: wrap;
   gap: 50px;
+}
+
+.card-container h1 {
+  margin-bottom: 50px;
+  margin-top: 0;
 }
 
 .card {
@@ -205,12 +210,20 @@ p {
     justify-content: space-between;
   }
 
+  section {
+    margin-top: 80px;
+  }
   
   .card {
     flex-basis: calc(100% - 50px);
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
+  }
+
+  .card-container h1 {
+    margin-bottom: 50px;
+    margin-top: 30px;
   }
 
   .imgbox {
