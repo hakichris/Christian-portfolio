@@ -61,7 +61,7 @@ li {
     background-color: whitesmoke;
     padding: 5px;
     border-radius: 10px;
-    z-index: 99999;
+    z-index: 999;
   }
 }
 

@@ -24,7 +24,7 @@ section {
   text-align: center;
   margin-top: 10%;
   margin-bottom: 1%;
-  color: green;
+  color: rgb(30, 36, 30);
 }
 
 .cards {
@@ -65,8 +65,8 @@ section {
   padding: 5px 10px;
   text-align: center;
   height: fit-content;
-  color: white;
-  background-color:  #446649;
+  color: rgb(26, 24, 24);
+  background-color:  #ffffff;
   border-radius: 5px;
 }
 
@@ -80,7 +80,7 @@ section {
   justify-content: flex-end;
   align-items: center;
   margin-top: 120px;
-  background: #a29d9d;
+  background-color: #6faabd;
   border-radius: 20px 20px 50px 50px;
 
 }
@@ -164,11 +164,15 @@ button:hover {
 .popup-content {
   width: 50vw;
   height: fit-content;
-  background: #fff;
+  background: #70a2b3;
   border-radius: 20px;
   margin-bottom: 20px;
   transition: 0.3s;
   border: 2px solid transparent;
+}
+
+.popup-content .title {
+  margin-top: 20px;
 }
 
 .stacks {
@@ -282,7 +286,7 @@ p {
     align-items: center;
     width: 95vw;
     height: fit-content;
-    background: #fff;
+    background-color: #6faabd;
     border-radius: 20px;
     margin-bottom: 20px;
     transition: 0.3s;
