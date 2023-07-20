@@ -34,6 +34,7 @@ const ContactForm = () => {
       },
     });
     if (response.status === 200) {
+      alert('Form submitted succesfully! Christian will respond shortly');
       setEmail('');
       setName('');
       setMessage('');
