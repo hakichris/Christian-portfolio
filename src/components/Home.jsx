@@ -27,7 +27,7 @@ const Profile = () => (
         <h1 className="head1">
           Hey there. I’m Christian Hakizimana
           <span className="green-color">
-            A software engineer with focus on full stack web development
+            A software engineer with focusing on full stack web development
           </span>
         </h1>
         <p className="intro-exp">
