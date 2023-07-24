@@ -20,7 +20,7 @@ const About = () => {
             <Typewriter
               options={{
                 strings: ['I code simple, innovative solutions for complex problems',
-                  'I love working in teams of diversified people from bottom to top level',
+                  'I love working in teams of diversified people from all echellons',
                   'I stand for diversity and inclusion'],
                 autoStart: true,
                 loop: false,
@@ -31,7 +31,7 @@ const About = () => {
         </div>
         <iframe
           className="youtubevideo"
-          src="https://www.youtube.com/embed/7WU__JQuB8g/controls=1"
+          src="https://www.youtube.com/embed/V0N2SL0TxR4/controls=1"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
