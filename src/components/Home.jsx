@@ -1,4 +1,6 @@
 import '../CSS/mainpage.css';
+import { AiOutlineMail } from 'react-icons/ai';
+import { NavLink } from 'react-router-dom';
 import profilepicture from '../images/profilepicture.jpeg';
 
 const Profile = () => (
@@ -20,19 +22,31 @@ const Profile = () => (
             <a href="https://www.facebook.com/christian.hakizimana.1" rel="noreferrer" target="_blank">Facebook</a>
           </li>
         </ul>
-        <span>Email: Hakizachrist1@outlook.com</span>
-        <span>Tel: +257 62 876959</span>
+        <div className="contact-info">
+          <span>Email: Hakizachrist1@outlook.com</span>
+          <span>Tel: +257 62 876959</span>
+          <button type="submit" className="quick-contact">
+            {' '}
+            <NavLink className="navlink" to="/Contact">
+              {' '}
+              <AiOutlineMail size={15} />
+              {' '}
+              Quick contact
+            </NavLink>
+            {' '}
+          </button>
+        </div>
       </div>
       <div className="intro">
         <h1 className="head1">
           Hey there. I’m Christian Hakizimana
           <span className="green-color">
-            A software engineer with focusing on full stack web development
+            I code simple, innovative solutions for complex problems
           </span>
         </h1>
         <p className="intro-exp">
-          With a background in developing efficient software applications in a global market.
-          More than
+          I am a software engineer with a background in developing efficient
+          software applications in a global market. More than
           {' '}
           <span className="work-hours bold"> 3 years </span>
           {' '}
