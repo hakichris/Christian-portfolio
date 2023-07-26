@@ -19,7 +19,7 @@ const About = () => {
           <Typewriter
             options={{
               strings: ['I code simple, innovative solutions for complex problems',
-                'I love working in teams of diversified people from all echellons',
+                'I love working in teams of diversified people from all echelons',
                 'I stand for diversity and inclusion'],
               autoStart: true,
               loop: false,
