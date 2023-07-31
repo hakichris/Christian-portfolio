@@ -38,7 +38,7 @@ const ProjectCards = () => {
       title: 'Budget tracking App',
       stacks: ['Ruby', 'Rails', 'PostgreSQL', 'HTML5', 'Rspec Unit testing', 'JavaScript'],
       explanation: 'The personal budget application assists users in monitoring and categorizing their transactions',
-      link: ['https://github.com/hakichris/Budget', 'https://budget-app-l98w.onrender.com/'],
+      link: ['https://github.com/hakichris/Budget', 'https://budget-6oy4.onrender.com/'],
     },
 
     {
