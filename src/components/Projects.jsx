@@ -4,7 +4,7 @@ import Popup from '../Actions/popup';
 import 'aos/dist/aos.css';
 import '../CSS/card.css';
 import mentorimage from '../images/ProjectCardImages/mentorimage.png';
-import budgetimage from '../images/ProjectCardImages/budget.png';
+import budgetimage from '../images/ProjectCardImages/Budget App.png';
 import recipe from '../images/ProjectCardImages/Recipe.png';
 import todolist from '../images/ProjectCardImages/todolist.png';
 import conference from '../images/ProjectCardImages/conference.png';
