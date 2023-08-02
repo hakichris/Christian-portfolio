@@ -31,7 +31,7 @@ const About = () => {
       <div className="content-video-skills">
         <iframe
           className="youtubevideo"
-          src="https://www.youtube.com/embed/V0N2SL0TxR4/controls=1"
+          src="https://www.youtube.com/embed/FEJFxCTcB8Q/controls=1"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
