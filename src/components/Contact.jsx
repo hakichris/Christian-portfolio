@@ -34,7 +34,8 @@ function ContactForm() {
       },
     });
     if (response.status === 200) {
-      alert('Form submitted succesfully! Christian will respond shortly');
+      // Show notification message
+
       setEmail('');
       setName('');
       setMessage('');
