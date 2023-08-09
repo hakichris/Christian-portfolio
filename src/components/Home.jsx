@@ -50,9 +50,9 @@ function Profile() {
             {' '}
             <span className="work-hours bold"> 20+ </span>
             {' '}
-            efficient and agile software applications in a global market. More than
+            efficient and agile software applications in a global market.
             {' '}
-            <span className="work-hours bold"> 2 years </span>
+            <span className="work-hours bold"> 2+ years </span>
             {' '}
             of experience, including mentoring
             {' '}
