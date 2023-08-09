@@ -46,8 +46,11 @@ function Profile() {
             </span>
           </h1>
           <p className="intro-exp">
-            I am a software engineer with a background in developing efficient
-            software applications in a global market. More than
+            I am a software engineer with a background in developing
+            {' '}
+            <span className="work-hours bold"> 20+ </span>
+            {' '}
+            efficient and agile software applications in a global market. More than
             {' '}
             <span className="work-hours bold"> 2 years </span>
             {' '}
