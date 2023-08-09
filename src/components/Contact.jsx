@@ -1,5 +1,7 @@
 import '../CSS/contact.css';
 import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ContactForm() {
   const [name, setName] = useState('');
@@ -35,6 +37,15 @@ function ContactForm() {
     });
     if (response.status === 200) {
       // Show notification message
+      toast.success('Form submitted successfully! Christian will respond soon', {
+        position: 'top-right',
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
 
       setEmail('');
       setName('');
@@ -73,6 +84,7 @@ function ContactForm() {
           />
           <button type="submit">Submit</button>
         </form>
+        <ToastContainer />
       </div>
     </div>
   );
