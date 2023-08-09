@@ -49,7 +49,7 @@ function Profile() {
             I am a software engineer with a background in developing efficient
             software applications in a global market. More than
             {' '}
-            <span className="work-hours bold"> 3 years </span>
+            <span className="work-hours bold"> 2 years </span>
             {' '}
             of experience, including mentoring
             {' '}
