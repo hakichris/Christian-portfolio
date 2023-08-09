@@ -3,7 +3,7 @@ import '../CSS/card.css';
 import { SlClose } from 'react-icons/sl';
 import React, { useState } from 'react';
 
-const Popup = ({ card }) => {
+function Popup({ card }) {
   const [isOpen, setIsOpen] = useState(true);
 
   const closePopup = () => {
@@ -11,7 +11,7 @@ const Popup = ({ card }) => {
   };
 
   return (
-    <>
+    <div>
       {isOpen && (
         <div className="popup-container">
           <div className="popupbtn">
@@ -40,9 +40,9 @@ const Popup = ({ card }) => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
-};
+}
 
 Popup.propTypes = {
   card: PropTypes.shape({

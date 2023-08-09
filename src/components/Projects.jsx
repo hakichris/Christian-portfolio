@@ -10,7 +10,7 @@ import todolist from '../images/ProjectCardImages/todolist.png';
 import conference from '../images/ProjectCardImages/conference.png';
 import catalog from '../images/ProjectCardImages/catalog.png';
 
-const ProjectCards = () => {
+function ProjectCards() {
   const [isOpen, setIsOpen] = useState(null);
   const [cards] = useState([
     {
@@ -118,6 +118,6 @@ const ProjectCards = () => {
       </div>
     </section>
   );
-};
+}
 
 export default ProjectCards;

@@ -1,7 +1,7 @@
 import '../CSS/contact.css';
 import React, { useState } from 'react';
 
-const ContactForm = () => {
+function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -75,6 +75,6 @@ const ContactForm = () => {
       </div>
     </div>
   );
-};
+}
 
 export default ContactForm;
