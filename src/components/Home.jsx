@@ -48,7 +48,7 @@ function Profile() {
           <p className="intro-exp">
             I am a software engineer with a background in developing
             {' '}
-            <span className="work-hours bold"> 10+ </span>
+            <span className="work-hours bold"> 15+ </span>
             {' '}
             efficient and agile software applications in a global market.
             {' '}
