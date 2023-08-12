@@ -58,7 +58,8 @@ function Profile() {
             {' '}
             <span className="mentoring bold">10+</span>
             {' '}
-            junior developers to achieve concrete goals on a strict deadline. I stand for diversity and inclusion.
+            junior developers to achieve concrete goals on a strict deadline.
+            I stand for diversity and inclusion.
             Strong skills include
             {' '}
             <span className="mentoring bold">
