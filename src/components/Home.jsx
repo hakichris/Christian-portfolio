@@ -48,7 +48,7 @@ function Profile() {
           <p className="intro-exp">
             I am a software engineer with a background in developing
             {' '}
-            <span className="work-hours bold"> 20+ </span>
+            <span className="work-hours bold"> 10+ </span>
             {' '}
             efficient and agile software applications in a global market.
             {' '}
@@ -58,7 +58,7 @@ function Profile() {
             {' '}
             <span className="mentoring bold">10+</span>
             {' '}
-            junior developers to achieve concrete goals on a strict deadline.
+            junior developers to achieve concrete goals on a strict deadline. I stand for diversity and inclusion.
             Strong skills include
             {' '}
             <span className="mentoring bold">
