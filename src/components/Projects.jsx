@@ -19,7 +19,7 @@ function ProjectCards() {
       title: 'Mentor booking',
       stacks: ['Ruby', 'TailwindCSS', 'React', 'Redux', 'Back-end API', 'Docker'],
       explanation: 'Mentor-booking app helps juniors to book meetings and connect with seniors mentors in a specific stack. I designed the back-end API using ruby and also works on reservation for users.',
-      link: ['https://github.com/hienphan0111/Mentor-front-end-app', 'https://mentor-app-qxn4.onrender.com/'],
+      link: ['https://github.com/hakichris/Mentor-front-end-app', 'https://mentor-app-qxn4.onrender.com/'],
 
     },
 
