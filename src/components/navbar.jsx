@@ -1,61 +1,67 @@
-import { NavLink } from 'react-router-dom';
-import logo from '../images/hakikrislogo.jpeg';
-import '../CSS/navbar.css';
+import React, { active, useState } from 'react';
+import { Link } from 'react-router-dom';
+import styles from '../style';
+import { navLinks } from '../constants';
+import { logo, menu, close } from '../assets';
 
 function Navbar() {
+  const [setActive] = useState(' ');
+  const [toggle, setToggle] = useState(false);
+
   return (
-    <nav className="container">
-      <NavLink className="navlink" to="/">
-        <div className="logo-container">
-          <span><img src={logo} alt="logo" className="img-logo" /></span>
+    <nav
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+    >
+      <div className="w-full flex justify-between items-center max-w-7xl max-auto">
+        <Link to="/" className="flex items-center gap-2" onClick={() => { setActive(''); window.scrollTo(0, 0); }}>
+          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+        </Link>
+        <ul className="list-none hidden sm:flex flex-row gap-10">
+          {navLinks.map((link) => (
+            <li
+              key={link.id}
+              className={`${active === link.title ? 'text.white' : 'text-secondary'}
+            hover:text-white text-[18px] font-medium cursor-pointer`}
+            >
+              <a href={`#${link.id}`} onClick={() => setActive(link.title)}>
+                {link.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <div className="sm:hidden flex flex-1 justify-end items-center">
+          <button type="submit" onClick={() => setToggle(!toggle)}>
+            <img
+              src={toggle ? close : menu}
+              alt="menu"
+              className="w-[28px] h-[28px] object-container cursor-pointer"
+            />
+          </button>
+          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20
+          right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+          >
+            <ul className="list-none flex justify-end items-start flex-col gap-4">
+              {navLinks.map((link) => (
+                <li
+                  key={link.id}
+                  className={`${active === link.title ? 'text.white' : 'text-secondary'}
+            font-poppins font-medium cursor-pointer text-[16px]`}
+                >
+                  <a
+                    href={`#${link.id}`}
+                    onClick={() => {
+                      setToggle(!toggle);
+                      setActive(link.title);
+                    }}
+                  >
+                    {link.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </NavLink>
-      <ul className="navlink">
-        <li>
-          <NavLink
-            className="navlink hvr-underline-from-right"
-            style={({ isActive }) => (isActive
-              ? { textDecoration: 'underline' }
-              : { textDecoration: 'none' })}
-            to="/"
-          >
-            Profile
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            className="navlink hvr-underline-from-right"
-            style={({ isActive }) => (isActive
-              ? { textDecoration: 'underline' }
-              : { textDecoration: 'none' })}
-            to="/About"
-          >
-            About
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            className="navlink hvr-underline-from-right"
-            style={({ isActive }) => (isActive
-              ? { textDecoration: 'underline' }
-              : { textDecoration: 'none' })}
-            to="/Project"
-          >
-            Projects
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            className="navlink hvr-underline-from-right"
-            style={({ isActive }) => (isActive
-              ? { textDecoration: 'underline' }
-              : { textDecoration: 'none' })}
-            to="/Contact"
-          >
-            Contact me
-          </NavLink>
-        </li>
-      </ul>
+      </div>
     </nav>
   );
 }
