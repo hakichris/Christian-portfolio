@@ -1,23 +1,27 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Profile from './components/Home';
-import ProjectCards from './components/Projects';
-import ContactForm from './components/Contact';
-import SharedLayout from './components/sharedlayout';
-import About from './components/About';
+import { BrowserRouter } from 'react-router-dom';
+import {
+  About, Contact, Experience, Feedbacks, Hero, Navbar, Tech,
+  Works, StarsCanvas,
+} from './components';
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-
-        <Route path="/" element={<SharedLayout />}>
-          <Route index element={<Profile />} />
-          <Route path="About" element={<About />} />
-          <Route path="Project" element={<ProjectCards />} />
-          <Route path="Contact" element={<ContactForm />} />
-
-        </Route>
-      </Routes>
+      <div className="relative z-0 bg-primary">
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+          <Navbar />
+          <Hero />
+        </div>
+        <About />
+        <Experience />
+        <Tech />
+        <Works />
+        <Feedbacks />
+        <div className="relative z-0">
+          <Contact />
+          <StarsCanvas />
+        </div>
+      </div>
     </BrowserRouter>
 
   );
