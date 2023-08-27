@@ -40,13 +40,14 @@ function Profile() {
         </div>
         <div className="intro">
           <h1 className="head1">
-            Hey there. I’m Christian Hakizimana
+            Hello! I&apos;m Christian,
             <span className="green-color">
-              I code simple, innovative solutions for complex problems
+              a full-stack developer who crafts ingenious solutions for intricate challenges.
+              Let&apos;s innovate together!
             </span>
           </h1>
           <p className="intro-exp">
-            I am a software engineer with a background in developing
+            I have a background in developing
             {' '}
             <span className="work-hours bold"> 15+ </span>
             {' '}
