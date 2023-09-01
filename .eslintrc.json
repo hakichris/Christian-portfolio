@@ -21,6 +21,9 @@
         {"devDependencies": true}
       ],
       "react/react-in-jsx-scope": "off",
+      "react/no-unknown-property": ["error", { "ignore": ["object","intensity","groundColor",
+      "position","angle", "penumbra", "intensity", "castShadow", "shadow-mapSize", "intensity", "position",
+      "rotation"] }],
       "import/no-unresolved": "off",
       "no-shadow": "off"
     },
