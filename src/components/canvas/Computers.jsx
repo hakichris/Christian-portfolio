@@ -12,18 +12,18 @@ function Computers({ isMobile }) {
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
       <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={1}
+        position={[-10, 60, 10]}
+        angle={1.12}
+        penumbra={5}
+        intensity={5}
         castShadow
-        shadow-mapSize={1024}
+        shadow-mapSize={1030}
       />
-      <pointLight intensity={1} />
+      <pointLight intensity={100} />
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        position={isMobile ? [0, -3, -2.2] : [0, -4.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
