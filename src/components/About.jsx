@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect';
 
 function About() {
   const handleDownload = () => {
-    const resumeUrl = 'https://github.com/hakichris/Christian-portfolio/files/12041819/Christian.resume.software.engineer.pdf'; // Replace with your resume file URL
+    const resumeUrl = 'Christian resume FuD.pdf](https://github.com/hakichris/python_project/files/12629338/Christian.resume.FuD.pd'; // Replace with your resume file URL
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.download = 'Christian hakizimana resume.pdf'; // Replace with the desired filename for the downloaded file
