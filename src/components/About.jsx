@@ -71,7 +71,9 @@ function About() {
                 {' '}
                 <span>NodeJs |</span>
                 {' '}
-                <span>Vue.js</span>
+                <span>Vue.js |</span>
+                {' '}
+                <span>Django</span>
               </div>
             </div>
             <div className="technology">
