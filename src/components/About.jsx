@@ -55,7 +55,7 @@ function About() {
                 {' '}
                 <span>Python |</span>
                 {' '}
-                <span>Java</span>
+                <span>Typescript</span>
               </div>
             </div>
             <div className="technology">
@@ -65,7 +65,7 @@ function About() {
               <div className="description">
                 <span>React |</span>
                 {' '}
-                <span>Rails |</span>
+                <span>Ruby on Rails |</span>
                 {' '}
                 <span>jQuery |</span>
                 {' '}
