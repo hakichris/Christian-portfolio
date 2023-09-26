@@ -1,7 +1,7 @@
 .about {
   display: flex;
   margin-top: 20px;
-  height: auto;
+  height: 100vh;
   flex-direction: column;
   background-image: url('../images/pngwing.com\ \(3\).png');
   background-repeat: no-repeat;

@@ -1,6 +1,8 @@
 /* main card css */
 body {
   background-color: #f6f5f5;
+  margin: 0;
+  height: 100%;
 }
 
 .container {
