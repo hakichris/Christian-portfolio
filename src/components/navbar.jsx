@@ -41,6 +41,7 @@ function Navbar() {
             to="/Project"
           >
             Projects
+            (open source contributions)
           </NavLink>
         </li>
         <li>
