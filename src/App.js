@@ -3,7 +3,7 @@ import Profile from './components/Home';
 import ProjectCards from './components/Projects';
 import ContactForm from './components/Contact';
 import SharedLayout from './components/sharedlayout';
-import About from './components/About';
+// import About from './components/About';
 
 function App() {
   return (

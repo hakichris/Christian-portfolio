@@ -22,7 +22,7 @@ function Navbar() {
           </NavLink>
         </li>
         <li>
-          <NavLink
+          {/* <NavLink
             className="navlink hvr-underline-from-right"
             style={({ isActive }) => (isActive
               ? { textDecoration: 'underline' }
@@ -30,7 +30,7 @@ function Navbar() {
             to="/About"
           >
             About
-          </NavLink>
+          </NavLink> */}
         </li>
         <li>
           <NavLink
