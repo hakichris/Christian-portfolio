@@ -12,7 +12,7 @@ function App() {
 
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Profile />} />
-          <Route path="About" element={<About />} />
+          {/* <Route path="About" element={<About />} /> */}
           <Route path="Project" element={<ProjectCards />} />
           <Route path="Contact" element={<ContactForm />} />
 
