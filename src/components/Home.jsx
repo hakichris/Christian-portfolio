@@ -66,7 +66,7 @@ function Profile() {
             <span className="mentoring bold">
               {' '}
               React, Redux, JavaScript, Ruby on Rails, C++, Java, Leadership, Interpersonal skills,
-              Remote pair-programming, and cybersecurity. 
+              Remote pair-programming, and cybersecurity, fluent in english and french. 
             </span>
             {' '}
           </p>
