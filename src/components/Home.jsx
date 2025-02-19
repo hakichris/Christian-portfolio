@@ -43,7 +43,6 @@ function Profile() {
             Hello! I&apos;m Christian,
             <span className="green-color">
               a web developer and cybersecurity engineer who crafts ingenious solutions for intricate challenges.
-              Let&apos;s innovate together!
             </span>
           </h1>
           <p className="intro-exp">
@@ -66,7 +65,7 @@ function Profile() {
             <span className="mentoring bold">
               {' '}
               React, Redux, JavaScript, Ruby on Rails, C++, Java, Leadership, Interpersonal skills,
-              Remote pair-programming, and cybersecurity, fluent in english and french. 
+              Remote pair-programming, and cybersecurity,fluent in english and french. 
             </span>
             {' '}
           </p>
