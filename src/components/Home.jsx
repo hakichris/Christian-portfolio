@@ -42,7 +42,7 @@ function Profile() {
           <h1 className="head1">
             Hello! I&apos;m Christian,
             <span className="green-color">
-              a full-stack developer who crafts ingenious solutions for intricate challenges.
+              a web developer and cybersecurity engineer who crafts ingenious solutions for intricate challenges.
               Let&apos;s innovate together!
             </span>
           </h1>
@@ -53,7 +53,7 @@ function Profile() {
             {' '}
             efficient and agile software applications in a global market.
             {' '}
-            <span className="work-hours bold"> 2+ years </span>
+            <span className="work-hours bold"> 3+ years </span>
             {' '}
             of experience, including mentoring
             {' '}
@@ -66,7 +66,7 @@ function Profile() {
             <span className="mentoring bold">
               {' '}
               React, Redux, JavaScript, Ruby on Rails, C++, Java, Leadership, Interpersonal skills,
-              Remote pair-programming.
+              Remote pair-programming, and cybersecurity. 
             </span>
             {' '}
           </p>
