@@ -1,14 +1,14 @@
 import '../CSS/mainpage.css';
 import { AiOutlineMail } from 'react-icons/ai';
 import { NavLink } from 'react-router-dom';
-import profilepicture from '../images/profilepicture.jpeg';
+import profile from '../images/profile.jpeg';
 
 function Profile() {
   return (
     <div className="body">
       <div className="home">
         <div className="profiles">
-          <img src={profilepicture} className="profilepicture" alt="myprofile" />
+          <img src={profile} className="profilepicture" alt="myprofile" />
           <ul className="profile-links">
             <li>
               <a href="https://www.linkedin.com/in/hakichris/" rel="noreferrer" target="_blank">Linkedin</a>
@@ -65,8 +65,8 @@ function Profile() {
             {' '}
             <span className="mentoring bold">
               {' '}
-              React, Redux, Python, JavaScript, Ruby on Rails, C++, Java, Leadership,
-              Interpersonal skills, Remote pair-programming, Cybersecurity,
+              Cybersecurity, React, Python, JavaScript, Ruby on Rails, Leadership,
+              Interpersonal skills, Remote pair-programming,
               and fluent in english and french.
             </span>
             {' '}
