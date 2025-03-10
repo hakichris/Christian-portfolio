@@ -1,12 +1,12 @@
 import { NavLink } from 'react-router-dom';
-import logo from '../images/hakikrislogo.jpeg';
+import profilepicture from '../images/profilepicture.jpeg';
 
 function Navbar() {
   return (
     <nav className="container">
       <NavLink className="navlink" to="/">
         <div className="logo-container">
-          <span><img src={logo} alt="logo" className="img-logo" /></span>
+          <span><img src={profilepicture} alt="logo" className="img-logo" /></span>
         </div>
       </NavLink>
       <ul className="navlink">
@@ -41,6 +41,28 @@ function Navbar() {
             to="/Project"
           >
             Projects
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className="navlink hvr-underline-from-right"
+            style={({ isActive }) => (isActive
+              ? { textDecoration: 'underline' }
+              : { textDecoration: 'none' })}
+            to="/Certification"
+          >
+            Certifications
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className="navlink hvr-underline-from-right"
+            style={({ isActive }) => (isActive
+              ? { textDecoration: 'underline' }
+              : { textDecoration: 'none' })}
+            to="/Skill"
+          >
+            Skills & Stack
           </NavLink>
         </li>
         <li>
