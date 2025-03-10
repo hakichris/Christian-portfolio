@@ -2,8 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Profile from './components/Home';
 import ProjectCards from './components/Projects';
 import ContactForm from './components/Contact';
+import Certification from './components/Certification';
 import SharedLayout from './components/sharedlayout';
-// import About from './components/About';
+import Skill from './components/Skill';
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
 
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Profile />} />
-          {/* <Route path="About" element={<About />} /> */}
+          <Route path="Certification" element={<Certification />} />
           <Route path="Project" element={<ProjectCards />} />
+          <Route path="Skill" element={<Skill />} />
           <Route path="Contact" element={<ContactForm />} />
 
         </Route>
