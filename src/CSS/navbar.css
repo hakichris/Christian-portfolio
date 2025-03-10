@@ -3,7 +3,7 @@
   position: sticky;
   justify-content: center;
   align-items: center;
-  width: 75vh;
+  width: 90vh;
   top: 0%;
   left: 50%;
   transform: translate(-50%, 20%);
@@ -24,12 +24,12 @@
   justify-content: center;
   gap: 30px;
   width: 100%; 
+  color: black;
   bottom: 0;
-  background-color: #2c5933;
 }
 
 .colorwhite {
-  color: white;
+  color: rgb(2, 2, 2);
 }
 
 .logo-container {
