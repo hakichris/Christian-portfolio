@@ -10,14 +10,12 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Profile />} />
           <Route path="Certification" element={<Certification />} />
           <Route path="Project" element={<ProjectCards />} />
           <Route path="Skill" element={<Skill />} />
           <Route path="Contact" element={<ContactForm />} />
-
         </Route>
       </Routes>
     </BrowserRouter>
