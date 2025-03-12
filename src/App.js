@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Profile from './components/Home';
 import ProjectCards from './components/Projects';
 import ContactForm from './components/Contact';
@@ -8,7 +8,7 @@ import Skill from './components/Skill';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Profile />} />
@@ -18,7 +18,7 @@ function App() {
           <Route path="Contact" element={<ContactForm />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
 
   );
 }
