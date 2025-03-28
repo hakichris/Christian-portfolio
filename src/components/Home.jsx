@@ -42,33 +42,29 @@ function Profile() {
           <h1 className="head1">
             Hello! I&apos;m Christian,
             <span className="green-color">
-              a web developer and cybersecurity engineer who crafts ingenious solutions
-              for intricate challenges.
+              a Full-Stack Web Developer and IT Security engineer
+              who crafts ingenious solutions for intricate challenges.
             </span>
           </h1>
           <p className="intro-exp">
-            I have a background in developing
-            {' '}
-            <span className="work-hours bold"> 15+ </span>
-            {' '}
-            efficient and agile software applications in a global market.
-            {' '}
+            with
             <span className="work-hours bold"> 3+ years </span>
-            {' '}
-            of experience, including mentoring
-            {' '}
-            <span className="mentoring bold">10+</span>
-            {' '}
-            junior developers to achieve concrete goals on a strict deadline.
-            I stand for diversity and inclusion.
-            Strong skills include
-            {' '}
-            <span className="mentoring bold">
-              {' '}
-              Cybersecurity, React, Python, JavaScript, Ruby on Rails, Leadership,
-              Interpersonal skills, Remote pair-programming,
-              and fluent in english and french.
-            </span>
+            of experience in IT security, Software development and Threat mitigation.
+            I have developed
+            <span className="work-hours bold"> 15+ </span>
+            high-performance web applications while implementing security best practices
+            to safeguard applications and infrastructure. My expertise includes
+            <span className="mentoring bold"> SIEM monitoring, Firewall management, endpoint security, vulnerability assessment, and incident response. </span>
+            Additionally, I have provided cybersecurity training to teams across Africa, Europe,
+            and the US, educating
+            <span className="mentoring bold"> 50+ professionals </span>
+            on risk mitigation and secure coding practices.
+            On the development side, I have hands-on experience with React, Python, JavaScript,
+            Ruby on Rails,and cloud security (Azure, IAM, SaaS security).
+            I am
+            <span className="mentoring bold"> fluent in English and French </span>
+            and passionate about building secure,
+            scalable applications while strengthening organizational cybersecurity defenses.
             {' '}
           </p>
         </div>
