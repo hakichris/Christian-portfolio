@@ -49,13 +49,18 @@
   }
   
   .recommendation a {
-    margin-top: 1rem;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
     text-decoration: none;
-    color: #007bff;
+    font-size: 14px;
     font-weight: bold;
-    transition: color 0.2s ease;
+    color: #ffffff;
+    background: #007bff;
+    border-radius: 5px;
+    transition: background 0.3s ease;
   }
   
   .recommendation a:hover {
-    color: #0056b3;
+    background: #0056b3;
   }
