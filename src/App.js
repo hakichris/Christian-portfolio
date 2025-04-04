@@ -5,6 +5,7 @@ import ContactForm from './components/Contact';
 import Certification from './components/Certification';
 import SharedLayout from './components/sharedlayout';
 import Skill from './components/Skill';
+import Recommendation from './components/Recommendations';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="Certification" element={<Certification />} />
           <Route path="Project" element={<ProjectCards />} />
           <Route path="Skill" element={<Skill />} />
+          <Route path="Recommendation" element={<Recommendation />} />
           <Route path="Contact" element={<ContactForm />} />
         </Route>
       </Routes>

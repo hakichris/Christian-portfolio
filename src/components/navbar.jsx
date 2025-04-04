@@ -22,17 +22,6 @@ function Navbar() {
           </NavLink>
         </li>
         <li>
-          {/* <NavLink
-            className="navlink hvr-underline-from-right"
-            style={({ isActive }) => (isActive
-              ? { textDecoration: 'underline' }
-              : { textDecoration: 'none' })}
-            to="/About"
-          >
-            About
-          </NavLink> */}
-        </li>
-        <li>
           <NavLink
             className="navlink hvr-underline-from-right"
             style={({ isActive }) => (isActive
@@ -63,6 +52,17 @@ function Navbar() {
             to="/Skill"
           >
             Skills & Stack
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className="navlink hvr-underline-from-right"
+            style={({ isActive }) => (isActive
+              ? { textDecoration: 'underline' }
+              : { textDecoration: 'none' })}
+            to="/Recommendation"
+          >
+            Recommendations
           </NavLink>
         </li>
         <li>

@@ -3,7 +3,7 @@
   position: sticky;
   justify-content: center;
   align-items: center;
-  width: 90vh;
+  width: fit-content;
   top: 0%;
   left: 50%;
   transform: translate(-50%, 20%);
@@ -16,16 +16,6 @@
 
 .foot-container {
   position: relative;
-}
-
-.footer {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  width: 100%; 
-  color: black;
-  bottom: 0;
 }
 
 .colorwhite {
@@ -55,15 +45,24 @@ ul {
 }
 
 li {
-  margin-right: 10px;
+  margin: 10px 10px;
 }
 
 .navlink {
-  margin-left: 10px;
   text-decoration: none;
   font-weight: 700;
   color: #2c5933;
   padding: 0;
+}
+
+.footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 100%; 
+  color: black;
+  bottom: 0;
 }
 
 @media (max-width: 768px) {
